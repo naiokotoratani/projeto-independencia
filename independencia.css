@@ -2,6 +2,7 @@
     margin: 0%; 
     padding: 0%;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body{
@@ -122,6 +123,9 @@ body{
 }
 
 .contexto-historico h2 {
+    font-family: "Georgia", serif;
+    position: relative;
+    left: -410px;;
     font-size: 2rem;
     color: #14532d; /* Verde escuro */
     margin-bottom: 20px;
@@ -173,6 +177,7 @@ blockquote {
 }
   
 .texto h3 {
+    font-family: "Georgia", serif;
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #222;
@@ -183,4 +188,177 @@ blockquote {
     line-height: 1.6;
     color: #333;
 }
+
+.consequencias {
+    padding: 20px;
+    font-family: "Georgia", serif;
+    max-width: 1020px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px
+}
   
+.consequencias h2 {
+    color: #14532d;
+    margin-bottom: 15px;
+    position: relative;
+    left: -380px;;
+}
+  
+.consequencias p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.card {
+    background-color: #f9fbe7;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 2px 4px rgba(105, 102, 102, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+.icon {
+    width: 50px; 
+    height: 50px; 
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+    color: white;
+}
+  
+.politica i {
+    color: white; 
+}
+  
+.economia i {
+    color: #212121; 
+}
+  
+.sociedade i {
+    color: white; 
+}
+  
+.politica {
+    background-color: #388e3c; 
+}
+  
+.economia {
+    background-color: #fdd835; 
+}  
+.sociedade {
+    background-color: #1976d2; 
+}
+  
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+  
+.card p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+body { /* Adicionei para garantir que o hr não herde text-align: center */
+    text-align: left;
+  }
+  
+  footer {
+    background-color: #5d4037;
+    color: #f5f5f5;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around; /* Espaça os blocos principais */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* Alinha o texto dentro do container à esquerda */
+  }
+  
+  .footer-left {
+    flex: 1; /* Ocupa espaço à esquerda */
+  }
+  
+  .footer-middle {
+    display: flex;
+    gap: 50px; /* Espaço entre Navegação e Recursos */
+    flex: 1; /* Ocupa espaço no meio */
+    justify-content: center; /* Centraliza as seções de navegação e recursos */
+  }
+  
+  .footer-nav,
+  .footer-resources {
+    text-align: center; /* Centraliza o texto dentro de cada seção */
+  }
+  
+  .footer-nav h4,
+  .footer-resources h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .footer-nav ul,
+  .footer-resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav li,
+  .footer-resources li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-nav a,
+  .footer-resources a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover,
+  .footer-resources a:hover {
+    color: #ddd;
+  }
+  
+  .footer-right {
+    flex: 1; /* Ocupa espaço à direita */
+    text-align: right; /* Alinha o texto à direita */
+  }
+  
+  .footer-right p {
+    margin-bottom: 5px;
+  }
+  
+  .activate-windows {
+    color: #f5f5f5;
+    font-size: 0.8em;
+    text-align: right;
+    padding: 10px 20px 0;
+  }
